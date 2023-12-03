@@ -13,10 +13,10 @@ services:
   db:
     image: mysql:latest
     environment:
-      MYSQL_DATABASE: your_database_name
-      MYSQL_ROOT_PASSWORD: your_root_password
-      MYSQL_USER: your_db_user
-      MYSQL_PASSWORD: your_db_password
+      MYSQL_DATABASE: users
+      MYSQL_ROOT_PASSWORD: pandey31
+      MYSQL_USER: 'nageshwar'
+      MYSQL_PASSWORD: 'DtnPkAlpxWTC9CkE:'
     ports:
       - "3306:3306"
 pma:
@@ -28,4 +28,3 @@ pma:
     volumes:
       - ./def.conf:/etc/apache2/sites-available/000-default.conf
       - ./ports.conf:/etc/apache2/ports.conf
-      
